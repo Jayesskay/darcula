@@ -15,7 +15,7 @@ let g:colors_name='darcula'
 
 let s:p={
       \ 'null': ['NONE', 'NONE'],
-      \ 'bg': ['#202020', 255],
+      \ 'bg': ['#222222', 235],
       \ 'fg': ['#A9B7C6', 145],
       \ 'cursor': ['#BBBBBB', 250],
       \ 'identifierUnderCaret': ['#344134', 237],
@@ -46,7 +46,7 @@ let s:p={
       \ 'number': ['#6897BB', 103],
       \ 'delimiter': ['#CC7832', 172],
       \ 'specialComment': ['#8A653B', 95],
-      \ 'function': ['#FFC66D', 216],
+      \ 'function': ['#A9B7C6', 216],
       \ 'diffAdd': ['#294436', 23],
       \ 'diffText': ['#385570', 60],
       \ 'diffDelete': ['#484A4A', 239],
