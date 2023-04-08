@@ -15,8 +15,8 @@ let g:colors_name='darcula'
 
 let s:p={
       \ 'null': ['NONE', 'NONE'],
-      \ 'bg': ['#222222', 235],
-      \ 'fg': ['#A9B7C6', 145],
+      \ 'bg': ['#1D1D1D', 145],
+      \ 'fg': ['#999999', 145],
       \ 'cursor': ['#BBBBBB', 250],
       \ 'identifierUnderCaret': ['#344134', 237],
       \ 'identifierUnderCaretWrite': ['#40332B', 58],
@@ -30,7 +30,7 @@ let s:p={
       \ 'muted': ['#606060', 241],
       \ 'link': ['#287BDE', 32],
       \ 'stdOutput': ['#BBBBBB', 250],
-      \ 'lineNumber': ['#606366', 241],
+      \ 'lineNumber': ['#C7B553', 100],
       \ 'matchBraceFg': ['#FFEF28', 220],
       \ 'matchBraceBg': ['#3B514D', 59],
       \ 'todo': ['#A8C023', 142],
@@ -46,7 +46,7 @@ let s:p={
       \ 'number': ['#6897BB', 103],
       \ 'delimiter': ['#CC7832', 172],
       \ 'specialComment': ['#8A653B', 95],
-      \ 'function': ['#A9B7C6', 216],
+      \ 'function': ['#AAAA99', 145],
       \ 'diffAdd': ['#294436', 23],
       \ 'diffText': ['#385570', 60],
       \ 'diffDelete': ['#484A4A', 239],
@@ -171,8 +171,8 @@ call s:Hi('Error', s:p.error)
 call s:Hi('VertSplit', s:p.muted)
 call s:Hi('Folded', s:p.foldedFg, s:p.foldedBg)
 hi! link FoldColumn Folded
-call s:Hi('SignColumn', s:p.null, s:p.gutter)
-call s:Hi('LineNr', s:p.lineNumber, s:p.gutter)
+call s:Hi('SignColumn', s:p.null, ['#2A2A2A', 145])
+call s:Hi('LineNr', s:p.lineNumber)
 hi! link LineNrAbove LineNr
 hi! link LineNrBelow LineNr
 call s:Hi('CursorLineNr', s:p.cursorLineNr, s:p.cursorLine)
@@ -619,3 +619,4 @@ hi! link shOperator NormalFg
 
 " help
 hi! link helpHyperTextJump Number
+
